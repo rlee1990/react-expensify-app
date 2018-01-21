@@ -1,5 +1,7 @@
 import moment from 'moment';
 
+// Filters Reducer
+
 const filtersReducerDefaultState = {
   text: '',
   sortBy: 'date',
@@ -35,6 +37,6 @@ export default (state = filtersReducerDefaultState, action) => {
         endDate: action.endDate
       };
     default:
-    return state;
+      return state;
   }
 };
